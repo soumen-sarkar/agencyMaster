@@ -1,0 +1,966 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+	padding:0;
+	margin:0; 
+    font-family: 'Roboto', sans-serif;
+}
+a {
+ color: #747948;
+ text-decoration: none;
+}
+a:hover {
+ text-decoration: underline;
+ color: #747948;
+}
+button{
+    cursor: pointer;
+    transition: .5s;
+}
+button:hover{
+    opacity: .7;
+}
+a img {
+ border: 0;
+}
+h1, h1 a {
+ color: #260f02;
+ font-size: 28px;
+ font-weight: normal;
+ margin: 0;
+}
+h2, h2 a {
+ color: #260f02;
+ font-size: 26px;
+ font-weight: normal;
+ margin: 0;
+}
+h3, h3 a {
+ color: #260f02;
+ font-size: 22px;
+ font-weight: normal;
+ margin: 0;
+}
+h4, h4 a {
+ color: #767b49;
+ font-size: 20px;
+ font-weight: normal;
+ margin: 0;
+}
+h5, h5 a {
+ color: #212121;
+ font-size: 18px;
+ font-weight: normal;
+ margin: 0;
+}
+h6, h6 a {
+ color: #707445;
+ font-size: 16px;
+ font-weight: normal;
+ margin: 0;
+}
+p, ul, ol {
+ color: #212121;
+ font-size: 14px;
+ font-weight: normal;
+ margin: 0;
+ line-height: 21px;
+}
+input, input:hover, input:focus, button, button:focus{
+    outline: 0;
+}
+
+
+header{
+    padding: 12px 0;
+    margin: 0;
+    border-bottom: 1px solid #d2d3d4;
+}
+.header_main{
+    position: relative;
+}
+.header_main.fixed{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background: #fff;
+}
+.header_search{
+    width: 376px;
+    margin-right: 45px;
+    position: relative;
+}
+
+.header_search .search_input{
+    width: 100%;
+    height: 41px;
+    border: 1px solid #e1e1e1;
+    border-radius: 35px;
+    outline: 0;
+    position: relative;
+    padding-right: 80px;
+    padding-left: 52px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #285954;
+}
+.header_search button{
+    position: absolute;
+    right: 0;
+    top:0;
+    width: 75px;
+    height: 41px;
+    border-radius: 35px;
+    border: none;
+    background: #e1e1e1;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0;
+}
+.header_search .ti-search{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 99;
+    font-size: 20px;
+    color: #285954;
+}
+
+.header_title{
+    font-size: 24px;
+    color: #333333;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+.header_inner{
+    display: flex;
+    align-items: center;
+}
+.header_btn{
+    margin-left: auto;
+}
+.header_btn button{
+    width: 82px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    background: #acacac;
+    text-shadow: 1px 1px 2px #a1a1a1;
+    margin-left: 16px;
+}
+.header_btn button.login{
+    background: #74c044;
+}
+.main_content{
+    padding: 22px 0;
+}
+
+.left_side_bar{
+    background: #f6f6f6;
+    border: 1px solid #d2d3d4;
+    padding: 18px 12px;
+}
+.left_side_bar ul{
+    margin: 0;
+    padding: 0;
+}
+.left_side_bar ul li{
+    list-style-type: none;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+.left_side_bar ul li a{
+    font-size: 16px;
+    color: #666666;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    position: relative;
+    padding-left: 23px;
+    transition: .2s;
+}
+.left_side_bar ul li a:hover, .left_side_bar ul li a.active{
+    color: #245a56;
+    font-weight: normal;
+}
+.left_side_bar ul li a .ti-angle-right{
+    font-size: 12px;
+    color: #666666;
+    position: absolute;
+    left: 0;
+     top: 50%;
+    transform: translate(0, -50%);
+    
+}
+.left_side_bar ul li ul{
+    padding-left: 25px;
+    margin-top: 12px;
+}
+
+.client_entry_section{
+    margin: 0;
+    padding: 0;
+}
+.client_entry_section h2{
+    margin: 0 0 15px;
+    padding: 0 0 12px 0;
+    font-size: 24px;
+    font-weight: 100;
+    color: #333333;
+    border-bottom: 1px solid #d2d3d4;
+}
+.client_entry_main{
+    margin: 0;
+    padding: 0;
+}
+.client_entry_box{
+    border-bottom: 1px solid #d1d2d3;
+    margin-top: 8px;
+}
+.client_entry_box:last-child{
+    border-bottom: none;
+}
+
+.input_box{
+    display: flex;
+    align-items: center;
+}
+.input_box .input_box_label{
+    padding: 0 10px 0 0;
+    width: 40%;
+}
+.input_box .input_box_label label{
+    font-size: 14px;
+    color: #777777;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    line-height: 18px;
+   
+}
+.input_box .input_box_input{
+    width: 60%;
+    position: relative;
+}
+.input_box .input_box_input .input_field{
+    width: 100%;
+    height: 32px;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 1px 1px 4px #f3f0f0;
+    padding: 0 12px;
+    color: #333333;
+    font-size: 14px;
+}
+.input_box .input_box_input .input_field_textarea{
+    width: 100%;
+    height: 82px;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 1px 1px 4px #f3f0f0;
+    padding: 5px 12px;
+    color: #333333;
+    font-size: 14px;
+    resize: none;
+}
+.input_box .input_box_input .input_field_textarea:focus{
+    outline: 0;
+}
+.input_box{
+    margin-bottom: 8px;
+}
+.input_box_input .ti-calendar{
+    position: absolute;
+    right: 14px;
+    transform: translate(0, -50%);
+    font-size: 18px;
+    color: #848484;
+    top: 50%;
+}
+.radio_box_btns{
+    display: flex;
+}
+
+/*custom radio*/
+.radio_box {
+  display: block;
+  position: relative;
+  padding-left: 32px;
+  cursor: pointer;
+  font-size: 14px;
+    font-weight: 300;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+    color: 333333;
+    margin-right: 22px;
+}
+
+/* Hide the browser's default checkbox */
+.radio_box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 19px;
+  width: 19px;
+  border: 1px solid #d5d6d7;
+    border-radius: 50%;
+}
+
+
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.radio_box input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.radio_box .checkmark:after {
+ left: 4px;
+    top: 4px;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    background: #59dacd;
+ 
+}
+/*custom radio*/
+
+.add_client_btn{
+    width: 135px;
+    height: 42px;
+    border: none;
+    background: #2b5656;
+    border-radius: 3px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.contact_table{
+    margin: 0;
+    padding: 0;
+    
+}
+.contact_table table{
+    width:100%;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    box-shadow: 1px 1px 8px #f3f0f0;
+}
+.contact_table table tr th{
+    font-size: 16px;
+    color: #333333;
+    font-weight: normal;
+    background: #d7d7d7;
+    padding: 10px 15px;
+    position: sticky;
+}
+.contact_table table tr{
+    border-bottom: 1px solid #e1e1e1;
+    transition: .5s;
+}
+.contact_table table tr:hover{
+    background: #f9f9f9;
+    cursor: pointer;
+    
+}
+.contact_table table tr td{
+    font-size: 14px;
+    color: #777777;
+    font-weight: normal;
+    padding: 10px 15px;
+}
+.contact_table .action span{
+    font-size: 18px;
+    
+}
+.contact_table .action button{
+    background: none;
+    color: #777777;
+    border: none;
+    padding: 0;
+    margin-right: 10px;
+}
+.contact_table .action button:last-child{
+    margin-right: 0;
+}
+.contact_table table tr:last-child{
+    border-bottom: none;
+}
+.contact_table thead, .contact_table tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+.contact_table tbody {
+    display:block;
+    height: 450px;
+    overflow:auto;
+}
+.contact_table table tr td:first-child{
+    width: 48%;
+}
+.contact_table table tr th:first-child{
+    width: 48%;
+}
+
+.contact_table table tr td:nth-child(2n){
+    width: 32%;
+}
+.contact_table table tr th:nth-child(2n){
+    width: 32%;
+}
+/* width */
+.contact_table table tbody::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.contact_table table tbody::-webkit-scrollbar-track {
+  background: #ebebeb; 
+}
+ 
+/* Handle */
+.contact_table table tbody::-webkit-scrollbar-thumb {
+  background: #cccccc; 
+}
+
+
+.contact_information_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d2d3d4;
+    padding-bottom: 12px;
+}
+.contact_information_head h2{
+    font-size: 24px;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+}
+.contact_information_head a{
+    color: #ffffff;
+    font-size: 14px;
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 2px;
+    background: #2b5656;
+    text-decoration: none;
+    transition: .5s;
+}
+.contact_information_head a:hover{
+    opacity: .7;
+}
+.contact_information{
+    margin-top: 50px;
+}
+
+.contact_form{
+    margin-top: 20px;
+}
+.add_type{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #57daca;
+    height: 32px;
+    width: 95px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 0 3px 3px 0;
+    border: none;
+    padding: 0;
+}
+.contact_form .input_box_phone{
+    display: flex;
+}
+.contact_form .input_box_phone .phone_num{
+    width: 60%;
+}
+.contact_form .input_box_phone .ext{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    padding-left: 8px;
+}
+.contact_form .input_box_phone .ext label{
+    font-size: 14px;
+    font-weight: 300;
+    color: #777777;
+    margin: 0 8px 0 0;
+    padding: 0;
+}
+
+
+.copy_email {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+    font-weight: 300;
+    color: #333333;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.copy_email input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 100;
+  width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+/* Create a custom checkbox */
+.copy_email .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  border: 1px solid #e1e1e1;
+    border-radius: 0;
+}
+
+
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.copy_email input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.copy_email .checkmark:after {
+    left: 6px;
+    top: 2px;
+  width: 5px;
+  height: 10px;
+    border: solid #59dacd;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.button_save{
+    text-align: right;
+    margin-top: 20px;
+}
+.button_save button{
+    width: 125px;
+    height: 38px;
+    background: #2b5656;
+    border-radius: 3px;
+    font-size: 15px;
+    color: #ffffff;
+    border:none;
+}
+.contact_form .client_entry_box{
+    border-bottom: none;
+}
+footer{
+    padding: 12px;
+    background: #dfdfdf;
+    text-align: center;
+    font-weight: normal;
+    color: #777777;
+    margin-top: 60px;
+    font-size: 12px;
+}
+.mobile_header{
+    display: none;
+}
+
+#exampleModal .modal-dialog{
+    max-width:1005px;
+}
+
+
+.modal_table table{
+    width:100%;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    box-shadow: 1px 1px 8px #f3f0f0;
+}
+.modal_table table tr th{
+    font-size: 16px;
+    color: #333333;
+    font-weight: normal;
+    background: #d7d7d7;
+    padding: 10px 15px;
+    position: sticky;
+}
+.modal_table table tr{
+    border-bottom: 1px solid #e1e1e1;
+    transition: .5s;
+}
+.modal_table table tr:hover{
+    background: #f9f9f9;
+    cursor: pointer;
+}
+.modal_table table tr td{
+    font-size: 14px;
+    color: #777777;
+    font-weight: normal;
+    padding: 10px 15px;
+}
+
+
+.modal_table table tr:last-child{
+    border-bottom: none;
+}
+.modal_table thead, .modal_table tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+.modal_table tbody {
+    display:block;
+    height: 250px;
+    overflow:auto;
+}
+
+/* width */
+.modal_table table tbody::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.modal_table table tbody::-webkit-scrollbar-track {
+  background: #ebebeb; 
+}
+ 
+/* Handle */
+.modal_table table tbody::-webkit-scrollbar-thumb {
+  background: #cccccc; 
+}
+#exampleModal .modal-title{
+    font-weight: 100;
+    font-size: 24px;
+}
+#exampleModal .modal-header{
+    align-items: center;
+}
+#exampleModal .modal-body{
+    padding: 30px;
+}
+
+
+
+
+@charset "utf-8";
+/* CSS Document */
+
+
+@media (max-width: 1200px){
+    
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 767px) {
+    .header_inner{
+        flex-direction: column;
+    }
+    .header_search{
+        width: 100%;
+        margin-right: 0;
+        order: 2;
+        margin-top: 15px;
+    }
+    .header_search .search_input {
+    width: 100%;
+    height: 35px;
+    padding-right: 55px;
+    padding-left: 44px;
+    font-size: 14px;
+   
+}
+    .header_search .ti-search {
+        left: 15px;
+        font-size: 16px;
+}
+    .input_box{
+        flex-direction: column;
+    }
+    .header_btn button {
+        width: 82px;
+        height: 33px;
+        font-size: 14px;
+    }
+    .header_search button {
+        width: 50px;
+        height: 34px;
+        border-radius: 35px;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 0;
+}
+    .header_title{
+        order: 1;
+        font-size: 16px;
+        text-align: center;
+    }
+    .header_btn{
+        order: 3;
+    }
+    .header_btn{
+        margin-left: 0;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .header_btn button{
+        margin: 0 5px;
+    }
+    .client_entry_section{
+        margin-top: 20px;
+    }
+    .client_entry_section h2{
+        font-size: 18px;
+    }
+    .add_client_btn {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .input_box .input_box_label{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+    .input_box .input_box_input{
+        width: 100%;
+    }
+    .client_entry_box{
+        border-bottom: none;
+    }
+   
+    .radio_box{
+        font-size: 13px;
+    }
+    .contact_table{
+        margin-top: 20px;
+        overflow: auto;
+    }
+    .contact_table table{
+        width: 650px;
+    }
+    .contact_information_head h2{
+        font-size: 18px;
+    }
+    .contact_information_head a{
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    .add_type {
+        width: 60px;
+        font-size: 10px;
+    }
+   
+    .copy_email{
+        font-size: 13px;
+        padding-left: 20px;
+    }
+    .contact_form .input_box_phone .ext label{
+        font-size: 13px;
+    }
+    footer{
+        margin-top: 10px;
+    }
+    .button_save{
+        text-align: center;
+    }
+    .mobile_header{
+        display: flex;
+        align-items: center;
+        color: #e1e1e1;
+    }
+    .mobile_header button{
+        width: 25px;
+        height: 25px;
+        background: none;
+        border: none;
+        padding: 0;
+        margin-right: 15px;
+    }
+    .mobile_header button span{
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: #e1e1e1;
+        margin-bottom: 4px;
+    }
+    .mobile_header button span:last-child{
+        margin-bottom: 0;
+    }
+    .left_side_bar{
+        display: none;
+    }
+    .left_side_bar{
+        padding: 10px 12px;
+    }
+    .left_side_bar.show{
+        display: block;
+        margin-top: 10px;
+    }
+    #exampleModal .modal-body{
+        padding: 10px;
+    }
+    #exampleModal .modal-header{
+        padding: 10px;
+    }
+    #exampleModal .modal-title{
+        font-size: 18px;
+    }
+    #exampleModal .close{
+        font-size: 18px;
+    }
+    .modal_table{
+        overflow: auto;
+    }
+    .modal_table table{
+        width: 800px;
+    }
+    .add_client_btn_sec{
+        text-align: center;
+    }
+
+}
+
+@media(min-width:768px) and (max-width:1199px){
+    .header_title{
+        font-size: 15px;
+    }
+    .header_search {
+        width: 250px;
+        margin-right: 15px;
+    }
+    .header_btn button {
+        width: 70px;
+        height: 31px;
+        font-size: 14px;
+        margin-left: 6px;
+    }
+    
+    .header_search .search_input {
+    width: 100%;
+    height: 35px;
+    padding-right: 55px;
+    padding-left: 44px;
+    font-size: 14px;
+   
+}
+    .header_search .ti-search {
+        left: 15px;
+        font-size: 16px;
+}
+   
+    .header_search button{
+        width: 50px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .left_side_bar ul li a{
+        font-size: 12px;
+        padding-left: 12px;
+    }
+    .left_side_bar ul li a .ti-angle-right{
+        font-size: 8px;
+    }
+    .left_side_bar{
+        padding: 15px 5px;
+    }
+    .left_side_bar ul li{
+        margin-bottom: 8px;
+    }
+    .left_side_bar ul li ul{
+        padding-left: 5px;
+    }
+    .client_entry_section h2{
+        font-size: 18px;
+    }
+    .input_box .input_box_label label{
+        font-size: 12px;
+    }
+    .radio_box {
+   font-size: 12px;
+    padding-left: 25px;
+    font-size: 12px;
+    margin-right: 18px;
+}
+    .contact_table{
+        overflow: auto;
+    }
+    .contact_table table{
+        width: 450px;
+    }
+    .contact_information_head h2{
+        font-size: 18px;
+    }
+    .contact_information_head a {
+    font-size: 12px;
+    padding: 7px 10px;
+    }
+    .add_type {
+        width: 50px;
+        font-size: 10px;
+    }
+    .input_box .input_box_input .input_field{
+        padding: 0 5px;
+    }
+}
