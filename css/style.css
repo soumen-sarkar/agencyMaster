@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body{
@@ -207,11 +205,6 @@ header{
     padding-left: 25px;
     margin-top: 12px;
 }
-
-.client_entry_section{
-    margin: 0;
-    padding: 0;
-}
 .client_entry_section h2{
     margin: 0 0 15px;
     padding: 0 0 12px 0;
@@ -266,7 +259,7 @@ header{
 }
 .input_box .input_box_input .input_field_textarea{
     width: 100%;
-    height: 82px;
+    height: 65px;
     border: 1px solid #e1e1e1;
     border-radius: 3px;
     background: #fff;
@@ -371,7 +364,6 @@ header{
     color: #ffffff;
     font-weight: bold;
     font-size: 18px;
-    margin-top: 20px;
 }
 .contact_table{
     margin: 0;
@@ -431,7 +423,7 @@ header{
 }
 .contact_table tbody {
     display:block;
-    height: 450px;
+    height: 307px;
     overflow:auto;
 }
 .contact_table table tr td:first-child{
@@ -619,14 +611,13 @@ footer{
     text-align: center;
     font-weight: normal;
     color: #777777;
-    margin-top: 60px;
     font-size: 12px;
 }
 .mobile_header{
     display: none;
 }
 
-#exampleModal .modal-dialog{
+#clientDataModal .modal-dialog{
     max-width:1005px;
 }
 
@@ -689,29 +680,15 @@ footer{
 .modal_table table tbody::-webkit-scrollbar-thumb {
   background: #cccccc; 
 }
-#exampleModal .modal-title{
+#clientDataModal .modal-title{
     font-weight: 100;
     font-size: 24px;
 }
-#exampleModal .modal-header{
+#clientDataModal .modal-header{
     align-items: center;
 }
-#exampleModal .modal-body{
+#clientDataModal .modal-body{
     padding: 30px;
-}
-
-
-
-
-@charset "utf-8";
-/* CSS Document */
-
-
-@media (max-width: 1200px){
-    
-}
-
-@media (max-width: 992px) {
 }
 
 @media (max-width: 767px) {
@@ -828,7 +805,7 @@ footer{
     .mobile_header{
         display: flex;
         align-items: center;
-        color: #e1e1e1;
+        color: #777777;
     }
     .mobile_header button{
         width: 25px;
@@ -842,7 +819,7 @@ footer{
         display: block;
         width: 100%;
         height: 3px;
-        background: #e1e1e1;
+        background: #777777;
         margin-bottom: 4px;
     }
     .mobile_header button span:last-child{
@@ -858,16 +835,16 @@ footer{
         display: block;
         margin-top: 10px;
     }
-    #exampleModal .modal-body{
+    #clientDataModal .modal-body{
         padding: 10px;
     }
-    #exampleModal .modal-header{
+    #clientDataModal .modal-header{
         padding: 10px;
     }
-    #exampleModal .modal-title{
+    #clientDataModal .modal-title{
         font-size: 18px;
     }
-    #exampleModal .close{
+    #clientDataModal .close{
         font-size: 18px;
     }
     .modal_table{
@@ -962,5 +939,94 @@ footer{
     }
     .input_box .input_box_input .input_field{
         padding: 0 5px;
+    }
+}
+
+.wraper {            
+    height: 100vh;
+}        
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+header, footer, section {
+    width: 100vw;
+}
+section, .formArea, .formContent, .tableContent, .contactForm {
+    flex: 1;
+}
+.fullHeight {
+    height: 100%;
+}
+.fullWidth {
+    height: 100%;
+}
+.overFlow {
+    overflow: auto;
+}       
+.contactForm {
+    margin-top: 25px;
+}
+@media screen and (min-width: 768px) {
+    .clientEntryScroll {
+        height: 72vh;
+    }
+    .contactEntryScroll {
+        height: 39vh;
+    }
+    .formContent {
+        padding-right: 10px;
+    }
+    .contactForm {
+        margin-top: 0px;
+    }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    .clientEntryScroll {
+        height: 68vh;
+    }
+    .contactEntryScroll {
+        height: 31vh;
+    }
+    .contact_table tbody {
+        height: 219px;
+    }
+}
+@media screen and (min-width: 1024px) and (orientation: portrait) {
+    .clientEntryScroll {
+        height: auto;
+    }
+    .contactEntryScroll {
+        height: 31vh;
+    }
+    .contact_table tbody {
+        height: 526px;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .clientEntryScroll {
+        height: 75vh;
+    }
+    .contact_table tbody {
+        height: 350px;
+    }
+    .contactForm {
+        margin-top: 30px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .contact_table tbody {
+        height: 494px;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .clientEntryScroll {
+        height: 73vh;
+    }
+    .contactEntryScroll {
+        height: 29vh;
+    }
+    .contact_table tbody {
+        height: 350px;
     }
 }
