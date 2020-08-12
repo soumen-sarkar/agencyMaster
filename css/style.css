@@ -533,6 +533,7 @@ header{
     font-weight: 300;
     color: #333333;
   font-size: 14px;
+  line-height: 13px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -981,10 +982,13 @@ ul.menus li.active ul {
 }
 @media screen and (min-width: 1024px){    
     .contact_table tbody {
-        height: 350px;
+        height: 263px;
     }
 }
-@media screen and (min-width: 1366px) {    
+@media screen and (min-width: 1366px) {  
+    .contact_table tbody {
+        height: 350px;
+    }  
     .contactForm {
         margin-top: 30px;
     }

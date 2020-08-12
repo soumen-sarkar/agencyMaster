@@ -25,6 +25,7 @@
     });
 
        function reportSize() {
+            var browserWidth = $( window ).outerWidth();
             var browserHeight = $( window ).outerHeight();
             var headerHeight = $('#header').outerHeight();
             var footerHeight = $('#footer').outerHeight();
@@ -33,11 +34,18 @@
 
             var contactTable = $('.tableContent').outerHeight();
             var contactFormHeader = $('.contact_information_head').outerHeight();
-            // console.log('On load', browserHeight, headerHeight, footerHeight, buttonFooterHeight, clientEntryHeader);
+            // console.log('On load', browserWidth, browserHeight, headerHeight, footerHeight, buttonFooterHeight, clientEntryHeader);
             var clientEntryScrollHeight = browserHeight - headerHeight - footerHeight - buttonFooterHeight - clientEntryHeader - 25;
             var contactEntryScrollHeight = browserHeight - headerHeight - footerHeight - buttonFooterHeight - contactTable - contactFormHeader - 70;
-            $(".clientEntryScroll").css("height", clientEntryScrollHeight);
-            $(".contactEntryScroll").css("height", contactEntryScrollHeight);
+            
+            if(browserWidth >= 768){
+                $(".clientEntryScroll").css("height", clientEntryScrollHeight);
+                $(".contactEntryScroll").css("height", contactEntryScrollHeight);
+            }else {
+                $(".clientEntryScroll").css("height", 'auto');
+                $(".contactEntryScroll").css("height", 'auto');
+            }
+            
             
         }
         reportSize()
