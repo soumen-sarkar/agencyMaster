@@ -174,11 +174,11 @@ header{
 }
 .left_side_bar ul li{
     list-style-type: none;
-    margin: 0 0 15px 0;
+    margin: 0 0 6px 0;
     padding: 0;
 }
 .left_side_bar ul li a{
-    font-size: 16px;
+    font-size: 12px;
     color: #666666;
     font-weight: 100;
     margin: 0;
@@ -203,7 +203,6 @@ header{
 }
 .left_side_bar ul li ul{
     padding-left: 25px;
-    margin-top: 12px;
 }
 .client_entry_section h2{
     margin: 0 0 15px;
@@ -987,9 +986,21 @@ ul.menus li.active ul {
 }
 @media screen and (min-width: 1366px) {  
     .contact_table tbody {
-        height: 350px;
+        height: 211px;
     }  
     .contactForm {
         margin-top: 30px;
     }
 }
+@media screen and (min-width: 1600px) {
+    .left_side_bar ul li{
+        margin: 0 0 8px 0;
+    }     
+    .left_side_bar ul li a{
+        font-size: 14px;
+    }
+    .contact_table tbody {
+        height: 350px;
+    }
+}
+
