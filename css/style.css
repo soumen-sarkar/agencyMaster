@@ -248,7 +248,7 @@ header{
 }
 .input_box .input_box_input .input_field{
     width: 100%;
-    height: 32px;
+    height: 24px;
     border: 1px solid #e1e1e1;
     border-radius: 3px;
     background: #fff;
@@ -259,7 +259,7 @@ header{
 }
 .input_box .input_box_input .input_field_textarea{
     width: 100%;
-    height: 65px;
+    height: 50px;
     border: 1px solid #e1e1e1;
     border-radius: 3px;
     background: #fff;
@@ -273,7 +273,7 @@ header{
     outline: 0;
 }
 .input_box{
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 .input_box_input .ti-calendar{
     position: absolute;
@@ -494,12 +494,12 @@ header{
     right: 0;
     top: 0;
     background: #57daca;
-    height: 32px;
+    height: 24px;
     width: 95px;
     color: #fff;
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
-    line-height: 32px;
+    line-height: 24px;
     border-radius: 0 3px 3px 0;
     border: none;
     padding: 0;
