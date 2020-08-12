@@ -167,6 +167,7 @@ header{
     background: #f6f6f6;
     border: 1px solid #d2d3d4;
     padding: 18px 12px;
+    overflow: auto;
 }
 .left_side_bar ul{
     margin: 0;

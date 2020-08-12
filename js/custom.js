@@ -37,13 +37,23 @@
             // console.log('On load', browserWidth, browserHeight, headerHeight, footerHeight, buttonFooterHeight, clientEntryHeader);
             var clientEntryScrollHeight = browserHeight - headerHeight - footerHeight - buttonFooterHeight - clientEntryHeader - 25;
             var contactEntryScrollHeight = browserHeight - headerHeight - footerHeight - buttonFooterHeight - contactTable - contactFormHeader - 70;
-            
+            var leftSideBarHeight = browserHeight - headerHeight - footerHeight - 25;
+            var contactTableBodyHeight = Math.round((browserHeight - headerHeight - footerHeight - buttonFooterHeight - 60) / 2) ;
+                        
             if(browserWidth >= 768){
                 $(".clientEntryScroll").css("height", clientEntryScrollHeight);
                 $(".contactEntryScroll").css("height", contactEntryScrollHeight);
+                $(".contact_table tbody").css("height", contactTableBodyHeight);
             }else {
                 $(".clientEntryScroll").css("height", 'auto');
                 $(".contactEntryScroll").css("height", 'auto');
+                $(".contact_table tbody").css("height", 'auto');
+            }
+
+            if(browserHeight <= 768){
+                $(".left_side_bar").css("height", leftSideBarHeight);
+            }else {
+                $(".left_side_bar").css("height", 'auto');
             }
             
             
