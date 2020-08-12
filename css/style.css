@@ -967,66 +967,25 @@ section, .formArea, .formContent, .tableContent, .contactForm {
 .contactForm {
     margin-top: 25px;
 }
-@media screen and (min-width: 768px) {
-    .clientEntryScroll {
-        height: 72vh;
-    }
-    .contactEntryScroll {
-        height: 39vh;
-    }
+ul.menus li ul { 
+    display: none; 
+}
+ul.menus li.active ul { 
+    display: block; 
+}
+
+@media screen and (min-width: 768px) {    
     .formContent {
         padding-right: 10px;
     }
-    .contactForm {
-        margin-top: 0px;
-    }
 }
-@media screen and (min-width: 1024px) and (orientation: landscape) {
-    .clientEntryScroll {
-        height: 68vh;
-    }
-    .contactEntryScroll {
-        height: 31vh;
-    }
-    .contact_table tbody {
-        height: 219px;
-    }
-}
-@media screen and (min-width: 1024px) and (orientation: portrait) {
-    .clientEntryScroll {
-        height: auto;
-    }
-    .contactEntryScroll {
-        height: 31vh;
-    }
-    .contact_table tbody {
-        height: 526px;
-    }
-}
-@media screen and (min-width: 1366px) {
-    .clientEntryScroll {
-        height: 75vh;
-    }
+@media screen and (min-width: 1024px){    
     .contact_table tbody {
         height: 350px;
     }
+}
+@media screen and (min-width: 1366px) {    
     .contactForm {
         margin-top: 30px;
-    }
-}
-@media screen and (min-width: 1600px) {
-    .contact_table tbody {
-        height: 494px;
-    }
-}
-@media screen and (min-width: 1920px) {
-    .clientEntryScroll {
-        height: 73vh;
-    }
-    .contactEntryScroll {
-        height: 29vh;
-    }
-    .contact_table tbody {
-        height: 350px;
     }
 }
