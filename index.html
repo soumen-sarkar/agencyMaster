@@ -7,11 +7,13 @@
     <title>Welcome to Trucking Insurance Agency, LLC</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/themify-icons.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- <link rel="stylesheet" href="css/themify-icons.css"/> -->
     <!-- <link rel="stylesheet" href="css/style.css"/> -->
     <style type="text/css">
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
 
 body{
 	padding:0;
@@ -199,7 +201,7 @@ header{
     padding: 0;
     text-decoration: none;
     position: relative;
-    padding-left: 23px;
+    padding-left: 17px;
     transition: .2s;
 }
 .left_side_bar ul li a:hover, .left_side_bar ul li a.active{
@@ -209,6 +211,13 @@ header{
 .left_side_bar ul li a .ti-angle-right{
     font-size: 12px;
     color: #666666;
+    position: absolute;
+    left: 0;
+     top: 50%;
+    transform: translate(0, -50%);
+    
+}
+.left_side_bar ul li a span {    
     position: absolute;
     left: 0;
      top: 50%;
@@ -288,7 +297,7 @@ header{
 .input_box{
     margin-bottom: 4px;
 }
-.input_box_input .ti-calendar{
+.input_box_input .calendar{
     position: absolute;
     right: 14px;
     transform: translate(0, -50%);
@@ -1057,30 +1066,30 @@ ul.menus li.active ul {
                          <div class="left_side_bar">
                              <ul class="menus">
                                  <li>
-                                    <a href="#"><span class="ti-angle-right"></span>WorkFlow</a>
+                                    <a href="#"><span><img src="img/menuLeftArrow.png"/></span>WorkFlow</a>
                                     <ul>
-                                        <li><a href="#" ><span class="ti-angle-right"></span>Menu 1</a></li>
-                                        <li><a href="#" ><span class="ti-angle-right"></span>Menu 2</a></li>
+                                        <li><a href="#" ><span><img src="img/menuLeftArrow.png"/></span>Menu 1</a></li>
+                                        <li><a href="#" ><span><img src="img/menuLeftArrow.png"/></span>Menu 2</a></li>
                                     </ul>
                                  </li>
-                                 <li class="active"><a href="#"><span class="ti-angle-right"></span>Client</a>
+                                 <li class="active"><a href="#"><span><img src="img/menuLeftArrow.png"/></span>Client</a>
                                     <ul>
-                                        <li><a href="#" class="active"><span class="ti-angle-right"></span>Client Entry</a></li>
-                                        <li><a href="#"><span class="ti-angle-right"></span>125 Data</a></li>
-                                        <li><a href="#"><span class="ti-angle-right"></span>Fillings</a></li>
+                                        <li><a href="#" class="active"><span><img src="img/menuLeftArrow.png"/></span>Client Entry</a></li>
+                                        <li><a href="#"><span><img src="img/menuLeftArrow.png"/></span>125 Data</a></li>
+                                        <li><a href="#"><span><img src="img/menuLeftArrow.png"/></span>Fillings</a></li>
                                     </ul>
                                  </li>
-                                 <li><a href="#"><span class="ti-angle-right"></span> Policies</a></li>
-                                 <li><a href="#"><span class="ti-angle-right"></span> History</a></li>
-                                 <li><a href="#"><span class="ti-angle-right"></span> Documents</a></li>
-                                 <li><a href="#"><span class="ti-angle-right"></span> Forms</a></li>
-                                 <li><a href="#"><span class="ti-angle-right"></span> Letters</a></li>
-                                 <li><a href="#"><span class="ti-angle-right"></span> E-mail</a></li>
-                                 <li><a href="#"><span class="ti-angle-right"></span> Payments</a></li>
-                                 <li><a href="#"><span class="ti-angle-right"></span> Invoicing</a></li>
-                                 <li><a href="#"><span class="ti-angle-right"></span> Accounting</a></li>
-                                 <li><a href="#"><span class="ti-angle-right"></span> Reports</a></li>
-                                 <li><a href="#"><span class="ti-angle-right"></span> Executive</a></li>
+                                 <li><a href="#"><span><img src="img/menuLeftArrow.png"/></span> Policies</a></li>
+                                 <li><a href="#"><span><img src="img/menuLeftArrow.png"/></span> History</a></li>
+                                 <li><a href="#"><span><img src="img/menuLeftArrow.png"/></span> Documents</a></li>
+                                 <li><a href="#"><span><img src="img/menuLeftArrow.png"/></span> Forms</a></li>
+                                 <li><a href="#"><span><img src="img/menuLeftArrow.png"/></span> Letters</a></li>
+                                 <li><a href="#"><span><img src="img/menuLeftArrow.png"/></span> E-mail</a></li>
+                                 <li><a href="#"><span><img src="img/menuLeftArrow.png"/></span> Payments</a></li>
+                                 <li><a href="#"><span><img src="img/menuLeftArrow.png"/></span> Invoicing</a></li>
+                                 <li><a href="#"><span><img src="img/menuLeftArrow.png"/></span> Accounting</a></li>
+                                 <li><a href="#"><span><img src="img/menuLeftArrow.png"/></span> Reports</a></li>
+                                 <li><a href="#"><span><img src="img/menuLeftArrow.png"/></span> Executive</a></li>
                              </ul>
      
                          </div>
@@ -1273,7 +1282,9 @@ ul.menus li.active ul {
                                                         </div>
                                                         <div class="input_box_input">
                                                         <input type="text" class="input_field" data-provide="datepicker">
-                                                            <span class="ti-calendar"></span>
+                                                            <span class="calendar">
+                                                                <img src="img/calender.png"/>
+                                                            </span>
                                                         </div>
                                                     </div>
                                                     
@@ -1335,16 +1346,16 @@ ul.menus li.active ul {
                                                         <td>Owner Operator</td>
                                                         <td>Babby Jones</td>
                                                         <td class="action">
-                                                            <button><span class="ti-pencil"></span></button>
-                                                            <button><span class="ti-trash"></span></button>
+                                                            <button><img src="./img/edit.png"></button>
+                                                            <button><img src="./img/delete.png"></button>
                                                         </td>
                                                     </tr>
                                                      <tr>
                                                         <td>Retail Broker - Sub Producer</td>
                                                         <td>2nd contact</td>
                                                         <td class="action">
-                                                            <button><span class="ti-pencil"></span></button>
-                                                            <button><span class="ti-trash"></span></button>
+                                                            <button><img src="./img/edit.png"></button>
+                                                            <button><img src="./img/delete.png"></button>
                                                         </td>
                                                     </tr>
                                                     
@@ -1352,16 +1363,16 @@ ul.menus li.active ul {
                                                         <td>Owner Operator</td>
                                                         <td>Babby Jones</td>
                                                         <td class="action">
-                                                           <button><span class="ti-pencil"></span></button>
-                                                            <button><span class="ti-trash"></span></button>
+                                                            <button><img src="./img/edit.png"></button>
+                                                            <button><img src="./img/delete.png"></button>
                                                         </td>
                                                     </tr>
                                                      <tr>
                                                         <td>Retail Broker - Sub Producer</td>
                                                         <td>2nd contact</td>
                                                         <td class="action">
-                                                            <button><span class="ti-pencil"></span></button>
-                                                            <button><span class="ti-trash"></span></button>
+                                                            <button><img src="./img/edit.png"></button>
+                                                            <button><img src="./img/delete.png"></button>
                                                         </td>
                                                     </tr>
                                                     
@@ -1369,16 +1380,16 @@ ul.menus li.active ul {
                                                         <td>Owner Operator</td>
                                                         <td>Babby Jones</td>
                                                         <td class="action">
-                                                           <button><span class="ti-pencil"></span></button>
-                                                            <button><span class="ti-trash"></span></button>
+                                                            <button><img src="./img/edit.png"></button>
+                                                            <button><img src="./img/delete.png"></button>
                                                         </td>
                                                     </tr>
                                                      <tr>
                                                         <td>Retail Broker - Sub Producer</td>
                                                         <td>2nd contact</td>
                                                         <td class="action">
-                                                            <button><span class="ti-pencil"></span></button>
-                                                            <button><span class="ti-trash"></span></button>
+                                                            <button><img src="./img/edit.png"></button>
+                                                            <button><img src="./img/delete.png"></button>
                                                         </td>
                                                     </tr>
                                                     
@@ -1386,16 +1397,16 @@ ul.menus li.active ul {
                                                         <td>Owner Operator</td>
                                                         <td>Babby Jones</td>
                                                         <td class="action">
-                                                             <button><span class="ti-pencil"></span></button>
-                                                            <button><span class="ti-trash"></span></button>
+                                                            <button><img src="./img/edit.png"></button>
+                                                            <button><img src="./img/delete.png"></button>
                                                         </td>
                                                     </tr>
                                                      <tr>
                                                         <td>Retail Broker - Sub Producer</td>
                                                         <td>2nd contact</td>
                                                         <td class="action">
-                                                            <button><span class="ti-pencil"></span></button>
-                                                            <button><span class="ti-trash"></span></button>
+                                                            <button><img src="./img/edit.png"></button>
+                                                            <button><img src="./img/delete.png"></button>
                                                         </td>
                                                     </tr>
                                                     
@@ -1403,16 +1414,16 @@ ul.menus li.active ul {
                                                         <td>Owner Operator</td>
                                                         <td>Babby Jones</td>
                                                         <td class="action">
-                                                            <button><span class="ti-pencil"></span></button>
-                                                            <button><span class="ti-trash"></span></button>
+                                                            <button><img src="./img/edit.png"></button>
+                                                            <button><img src="./img/delete.png"></button>
                                                         </td>
                                                     </tr>
                                                      <tr>
                                                         <td>Retail Broker - Sub Producer</td>
                                                         <td>2nd contact</td>
                                                         <td class="action">
-                                                            <button><span class="ti-pencil"></span></button>
-                                                            <button><span class="ti-trash"></span></button>
+                                                            <button><img src="./img/edit.png"></button>
+                                                            <button><img src="./img/delete.png"></button>
                                                         </td>
                                                     </tr>
                                                     
@@ -1420,16 +1431,16 @@ ul.menus li.active ul {
                                                         <td>Owner Operator</td>
                                                         <td>Babby Jones</td>
                                                         <td class="action">
-                                                            <button><span class="ti-pencil"></span></button>
-                                                            <button><span class="ti-trash"></span></button>
+                                                            <button><img src="./img/edit.png"></button>
+                                                            <button><img src="./img/delete.png"></button>
                                                         </td>
                                                     </tr>
                                                      <tr>
                                                         <td>Retail Broker - Sub Producer</td>
                                                         <td>2nd contact</td>
                                                         <td class="action">
-                                                            <button><span class="ti-pencil"></span></button>
-                                                            <button><span class="ti-trash"></span></button>
+                                                            <button><img src="./img/edit.png"></button>
+                                                            <button><img src="./img/delete.png"></button>
                                                         </td>
                                                     </tr>
                                                     </tbody>
